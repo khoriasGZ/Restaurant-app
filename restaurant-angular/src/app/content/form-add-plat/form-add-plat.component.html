@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Name</label>
+    <input type="text" class="form-control"
+         [(ngModel)]="plat.nom" name="nom">
+  <label for="description">description</label>       
+  <input type="text" class="form-control"
+  [(ngModel)]="plat.description" name="description">
+  <label for="prix">prix</label>       
+  <input type="text" class="form-control"
+  [(ngModel)]="plat.prix" name="prix">
+  <button type="submit">Envoyer</button>
+        </form>
+        <a [routerLink]="['/']" class="btn btn-dark btn-sm space">Retour à la liste de plats</a>

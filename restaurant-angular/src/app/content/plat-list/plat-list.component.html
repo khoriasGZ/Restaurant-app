@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row justify-content-between">
+    <app-plat class="col-sm-6 col-md-4 col-lg-3 p-3" *ngFor="let plat of platService.plats| async" [plat]='plat' ></app-plat>
+  </div>
+  <button [routerLink]="['addDetail']">Ajouter un plat</button>
+</div>
+

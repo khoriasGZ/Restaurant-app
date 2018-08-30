@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test-restaurant": {
+    "restaurant-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/test-restaurant",
+            "outputPath": "dist/restaurant-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "test-restaurant:build"
+            "browserTarget": "restaurant-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "test-restaurant:build:production"
+              "browserTarget": "restaurant-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "test-restaurant:build"
+            "browserTarget": "restaurant-app:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "test-restaurant-e2e": {
+    "restaurant-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "test-restaurant:serve"
+            "devServerTarget": "restaurant-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "test-restaurant:serve:production"
+              "devServerTarget": "restaurant-app:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "test-restaurant"
+  "defaultProject": "restaurant-app"
 }
